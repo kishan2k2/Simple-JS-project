@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* this is for y axis */
+    align-items: center;
+    /* This one is for the x axis */
+    height: 100vh;
+}
+.emoji{
+    font-size: 10rem;
+    /* This one is relative to the default or the root size, i.e. it is 10 times bigger than the orignal size */
+    cursor: pointer;
+    user-select: none;
+    /* This will not allow the user to select anything, This can be used while setting online paper with strict time constraint */
+}
+.closed{
+    display: none;
+}
+.open{
+    display: none;
+}
+.active{
+    display: block;
+}
